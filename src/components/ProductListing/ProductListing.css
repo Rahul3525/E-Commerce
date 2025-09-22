@@ -1,0 +1,37 @@
+.product-listing {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.listing-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-listing {
+    padding: 20px 0;
+  }
+
+  .listing-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-listing {
+    padding: 15px 0;
+  }
+
+  .listing-layout {
+    gap: 15px;
+  }
+}

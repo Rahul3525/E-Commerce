@@ -1,0 +1,41 @@
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.badge-default {
+  background-color: #6c757d;
+  color: white;
+}
+
+.badge-hot {
+  background-color: #e94b3c;
+  color: white;
+}
+
+.badge-new {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-sale {
+  background-color: #ffc107;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .badge {
+    top: 8px;
+    left: 8px;
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}

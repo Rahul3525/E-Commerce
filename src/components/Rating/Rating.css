@@ -1,0 +1,60 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #ddd;
+  fill: currentColor;
+}
+
+.star-filled {
+  color: #ffc107;
+}
+
+.star-half {
+  color: #ffc107;
+  position: relative;
+}
+
+.star-half::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.star-empty {
+  color: #ddd;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #666;
+  margin-left: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .rating {
+    gap: 4px;
+  }
+
+  .stars {
+    gap: 1px;
+  }
+
+  .rating-count {
+    font-size: 11px;
+  }
+}
